@@ -10,11 +10,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
     <>
-        <Greeting tittle="Hello"/>
-        <Greeting name="Kevin"/>
-        <Greeting apellido="Gutierrez"/>
-        <UserCard/>
-        <Product/>
-        <Navbar/>
+        <UserCard 
+            name="Kevin" 
+            amount={20000} 
+            married={false} 
+            point={[99, 33.3, 22.1]} 
+            address={{street: '777 Main Street', city: 'Peru'}}
+            greet={function () { alert('Hello')}}
+        />
     </>
 )
